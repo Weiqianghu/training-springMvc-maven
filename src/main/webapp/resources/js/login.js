@@ -48,7 +48,6 @@ function login() {
 		return;
 	}
 	var jsonObj = getParam();
-	// var jsonStr = JSON.stringify(jsonObj);
 	$.ajax({
 		url : "login",
 		type : 'POST',
@@ -59,15 +58,14 @@ function login() {
 			verifyCode : jsonObj["verifyCode"]
 
 		},
-
 		dataType : 'json',
 		success : function(data) {
 			var data = eval(data);
 			if (data.status == 0) {
 				alert("登陆成功");
-			} else if (data.status == '1') {
+			} else if (data.status == 1) {
 				alert("登陆发生错误错误");
-			} else if (data.status == '2') {
+			} else if (data.status == 2) {
 				// ShowFailure("验证码错误");
 				alert("密码错误");
 			} else if (data.status == 3) {

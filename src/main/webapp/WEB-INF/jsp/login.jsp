@@ -42,7 +42,7 @@
 						</div>
 						<div class="col-md-4">
 							<img id="img" class="form-control"
-								onclick="javascript:refresh(this);" src="VerifyCodeServlet"
+								onclick="javascript:refresh(this);" src="verifyCode"
 								data-toggle="popover">
 						</div>
 					</div>
@@ -58,7 +58,7 @@
 	</div>
 	<script type="text/javascript">
 		function refresh(obj) {
-			obj.src = "VerifyCodeServlet?" + Math.random();
+			obj.src = "verifyCode?" + Math.random();
 		}
 	</script>
 </body>

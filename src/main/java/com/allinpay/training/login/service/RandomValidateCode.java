@@ -1,4 +1,4 @@
-package com.allinpay.training.login.verifycode;
+package com.allinpay.training.login.service;
 
 import java.awt.Color;
 import java.awt.Font;
